@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Test suite" parallel="tests">
+<suite name="Test suite" >
 <parameter name="browser" value="firefox"></parameter>
-	<test enabled="true" name="Run in IE"> 
-		<parameter name="baseUrl" value="http://www2.arcaneo.com/Metron"></parameter>
-		<parameter name="Username" value="nitesh.xy@gmail.com"></parameter>
-		<parameter name="Password" value="23253374414"></parameter>
-		<parameter name="browser" value="firefox"></parameter>
-		<parameter name="emailID" value="autochetu@gmail.com"></parameter>
-		<parameter name="emailPass" value="shift4@123"></parameter>
-		<parameter name="excelReportPath" value="D:\\CendynHT-QA_Automation_Scripts\\ExpectedResult\\Result.xls"></parameter>
+	<test enabled="false" name="Run in Chrome"> 
+		<parameter name="browser" value="chrome"></parameter>
+		   <classes>	
+	        <class name="testCases.TestCases"/>
+	       </classes>
+	</test>
+	       	 
+	<test enabled="true" name="Run in FireFox"> 
+		<parameter name="browser" value="Firefox"></parameter>	
 		   <classes>
-		   	
-	       <class name="testCases.TestCases"/>
-	       
+	        <class name="testCases.TestCases"/>
 	       </classes>
 	       
-	       	 </test>
+	</test>
+	      
+    <test enabled="false" name="Run in Internet Explorer"> 
+		<parameter name="browser" value="iexplore"></parameter>
+		   <classes>
+	       <class name="testCases.TestCases"/>
+	       </classes>
+ </test>
+ 
 </suite>

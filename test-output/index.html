@@ -2,6 +2,7 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -23,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_suite">
-              <span class="suite-name border-failed">Test suite</span>
+              <span class="suite-name border-passed">Test suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Test_suite">
-                    <span>C:\Users\pirat\Downloads\LinkedinTestNew\LinkedinTestNew\src\main\resources\TestNG.xml</span>
+                    <span>D:\LinkedIn\LinkedInTest\src\main\resources\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,26 +91,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_suite" class="hide-methods failed suite-Test_suite"> (hide)</a> <!-- hide-methods failed suite-Test_suite -->
-                      <a href="#" panel-name="suite-Test_suite" class="show-methods failed suite-Test_suite"> (show)</a> <!-- show-methods failed suite-Test_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_suite" class="hide-methods passed suite-Test_suite"> (hide)</a> <!-- hide-methods passed suite-Test_suite -->
+                      <a href="#" panel-name="suite-Test_suite" class="show-methods passed suite-Test_suite"> (show)</a> <!-- show-methods passed suite-Test_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Test_suite">
+                    <div class="method-list-content passed suite-Test_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="testlogin(invalid, no)">testlogin(invalid, no)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="advancedSearch(nitesh.xy@gmail.com, 23253374414)">advancedSearch(nitesh.xy@gmail.com, 23253374414)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="testlogin(nitesh.xy@gmail.com, 23253374414)">testlogin(nitesh.xy@gmail.com, 23253374414)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="checklanguage">checklanguage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Test_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="testloginInvalid(invalid, no)">testloginInvalid(invalid, no)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="testCases.TestCases" hash-for-method="testloginValid(nitesh.xy@gmail.com, 23253374414)">testloginValid(nitesh.xy@gmail.com, 23253374414)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,101 +142,76 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_suite" class="panel Test_suite">
-          <div class="suite-Test_suite-class-failed">
+          <div class="suite-Test_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testCases.TestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testlogin(invalid, no)">
-                  </a> <!-- testlogin(invalid, no) -->
-                  <span class="method-name">testlogin</span>
-                  <span class="parameters">(invalid, no)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: .lazy-image.feed-s-identity-module__member-photo.EntityPhoto-circle-5.loaded
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
-System info: host: &apos;NITESH-PC&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=12592, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, firefox_profile=UEsDBBQACAgIAIRTY0oAAAAAAAAAA...}]
-Session ID: 3c02b8fb-fe6a-4321-b8a2-13e30c690301
-*** Element info: {Using=css selector, value=.lazy-image.feed-s-identity-module__member-photo.EntityPhoto-circle-5.loaded}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:465)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at pageObjects.HomePage.isElementPresennt(HomePage.java:66)
-	at testCases.TestCases.testlogin(TestCases.java:70)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
+                  <a name="advancedSearch(nitesh.xy@gmail.com, 23253374414)">
+                  </a> <!-- advancedSearch(nitesh.xy@gmail.com, 23253374414) -->
+                  <span class="method-name">advancedSearch</span>
+                  <span class="parameters">(nitesh.xy@gmail.com, 23253374414)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testlogin(nitesh.xy@gmail.com, 23253374414)">
-                  </a> <!-- testlogin(nitesh.xy@gmail.com, 23253374414) -->
-                  <span class="method-name">testlogin</span>
+                  <a name="checklanguage">
+                  </a> <!-- checklanguage -->
+                  <span class="method-name">checklanguage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOut">
+                  </a> <!-- logOut -->
+                  <span class="method-name">logOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openURL">
+                  </a> <!-- openURL -->
+                  <span class="method-name">openURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testloginInvalid(invalid, no)">
+                  </a> <!-- testloginInvalid(invalid, no) -->
+                  <span class="method-name">testloginInvalid</span>
+                  <span class="parameters">(invalid, no)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testloginValid(nitesh.xy@gmail.com, 23253374414)">
+                  </a> <!-- testloginValid(nitesh.xy@gmail.com, 23253374414) -->
+                  <span class="method-name">testloginValid</span>
                   <span class="parameters">(nitesh.xy@gmail.com, 23253374414)</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not visible
-Build info: version: &apos;3.1.0&apos;, revision: &apos;b94c902&apos;, time: &apos;2017-02-16 12:21:31 -0800&apos;
-System info: host: &apos;NITESH-PC&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20170125094131, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=12592, browserVersion=51.0.1, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, firefox_profile=UEsDBBQACAgIAIRTY0oAAAAAAAAAA...}]
-Session ID: 3c02b8fb-fe6a-4321-b8a2-13e30c690301
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at pageObjects.HomePage.typeFirstName(HomePage.java:73)
-	at testCases.TestCases.testlogin(TestCases.java:73)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-failed -->
+          </div> <!-- suite-Test_suite-class-passed -->
         </div> <!-- panel Test_suite -->
         <div panel-name="test-xml-Test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\pirat\Downloads\LinkedinTestNew\LinkedinTestNew\src\main\resources\TestNG.xml</span>
+            <span class="header-content">D:\LinkedIn\LinkedInTest\src\main\resources\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Test suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite name=&quot;Test suite&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-  &lt;test name=&quot;Run in IE&quot;&gt;
-    &lt;parameter name=&quot;baseUrl&quot; value=&quot;http://www2.arcaneo.com/Metron&quot;/&gt;
-    &lt;parameter name=&quot;excelReportPath&quot; value=&quot;D:\\CendynHT-QA_Automation_Scripts\\ExpectedResult\\Result.xls&quot;/&gt;
-    &lt;parameter name=&quot;Username&quot; value=&quot;nitesh.xy@gmail.com&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-    &lt;parameter name=&quot;emailID&quot; value=&quot;autochetu@gmail.com&quot;/&gt;
-    &lt;parameter name=&quot;emailPass&quot; value=&quot;shift4@123&quot;/&gt;
-    &lt;parameter name=&quot;Password&quot; value=&quot;23253374414&quot;/&gt;
+  &lt;test name=&quot;Run in FireFox&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TestCases&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run in IE --&gt;
+  &lt;/test&gt; &lt;!-- Run in FireFox --&gt;
 &lt;/suite&gt; &lt;!-- Test suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,7 +223,7 @@ Session ID: 3c02b8fb-fe6a-4321-b8a2-13e30c690301
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run in IE (1 class)</span>
+                <span class="test-name">Run in FireFox (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,20 +249,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testlogin')
+data.setCell(0, 1, 'testloginValid')
 data.setCell(0, 2, 'testCases.TestCases')
-data.setCell(0, 3, 70186);
+data.setCell(0, 3, 8102);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testlogin')
+data.setCell(1, 1, 'advancedSearch')
 data.setCell(1, 2, 'testCases.TestCases')
-data.setCell(1, 3, 38019);
+data.setCell(1, 3, 6101);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logOut')
+data.setCell(2, 2, 'testCases.TestCases')
+data.setCell(2, 3, 3782);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testloginInvalid')
+data.setCell(3, 2, 'testCases.TestCases')
+data.setCell(3, 3, 1963);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'openURL')
+data.setCell(4, 2, 'testCases.TestCases')
+data.setCell(4, 3, 1544);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checklanguage')
+data.setCell(5, 2, 'testCases.TestCases')
+data.setCell(5, 3, 740);
 window.suiteTableData['Test_suite']= { tableData: data, tableDiv: 'times-div-Test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Test_suite">
               </div> <!-- times-div-Test_suite -->
             </div> <!-- times-div -->
@@ -293,34 +305,62 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">startreport</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">432 ms</span>
+                <span class="method-name">setup(Firefox)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testlogin(invalid, no)</span>
-                <span class="method-start">14100 ms</span>
+                <span class="method-name">openURL</span>
+                <span class="method-start">8468 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=openURL status=SUCCESS method=TestCases.openURL()[pri:0, instance:testCases.TestCas...)</span>
+                <span class="method-start">10015 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testlogin(nitesh.xy@gmail.com, 23253374414)</span>
-                <span class="method-start">84293 ms</span>
+                <span class="method-name">checklanguage</span>
+                <span class="method-start">10042 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checklanguage status=SUCCESS method=TestCases.checklanguage()[pri:1, instance:testC...)</span>
+                <span class="method-start">10784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testloginInvalid(invalid, no)</span>
+                <span class="method-start">11434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testloginInvalid status=SUCCESS method=TestCases.testloginInvalid(java.lang.String,...)</span>
+                <span class="method-start">13398 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testloginValid(nitesh.xy@gmail.com, 23253374414)</span>
+                <span class="method-start">13509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testloginValid status=SUCCESS method=TestCases.testloginValid(java.lang.String, jav...)</span>
+                <span class="method-start">21612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">advancedSearch(nitesh.xy@gmail.com, 23253374414)</span>
+                <span class="method-start">21668 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=advancedSearch status=SUCCESS method=TestCases.advancedSearch(java.lang.String, jav...)</span>
+                <span class="method-start">27771 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">logOut</span>
+                <span class="method-start">27780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=logOut status=SUCCESS method=TestCases.logOut()[pri:5, instance:testCases.TestCases...)</span>
+                <span class="method-start">31563 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">122315 ms</span>
+                <span class="method-start">31570 ms</span>
               </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">endSetup</span>
-                <span class="method-start">133219 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

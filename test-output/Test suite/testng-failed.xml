@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Test suite]" parallel="tests">
-  <parameter name="baseUrl" value="http://www2.arcaneo.com/Metron"/>
-  <parameter name="excelReportPath" value="D:\\CendynHT-QA_Automation_Scripts\\ExpectedResult\\Result.xls"/>
-  <parameter name="Username" value="nitesh.xy@gmail.com"/>
+<suite name="Failed suite [Test suite]">
   <parameter name="browser" value="firefox"/>
-  <parameter name="emailID" value="autochetu@gmail.com"/>
-  <parameter name="emailPass" value="shift4@123"/>
-  <parameter name="Password" value="23253374414"/>
-  <test name="Run in IE(failed)" parallel="tests">
-    <parameter name="baseUrl" value="http://www2.arcaneo.com/Metron"/>
-    <parameter name="excelReportPath" value="D:\\CendynHT-QA_Automation_Scripts\\ExpectedResult\\Result.xls"/>
-    <parameter name="Username" value="nitesh.xy@gmail.com"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="emailID" value="autochetu@gmail.com"/>
-    <parameter name="emailPass" value="shift4@123"/>
-    <parameter name="Password" value="23253374414"/>
+  <test name="Run in FireFox(failed)">
+    <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="testCases.TestCases">
         <methods>
-          <include name="testlogin" invocation-numbers="0 1"/>
           <include name="endTest"/>
-          <include name="endSetup"/>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="startreport"/>
+          <include name="advancedSearch" invocation-numbers="0"/>
         </methods>
       </class> <!-- testCases.TestCases -->
     </classes>
-  </test> <!-- Run in IE(failed) -->
+  </test> <!-- Run in FireFox(failed) -->
 </suite> <!-- Failed suite [Test suite] -->

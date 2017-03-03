@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
       <class name="testCases.TestCases">
         <methods>
-          <include name="testlogin"/>
+          <include name="logOut"/>
+          <include name="testloginInvalid" invocation-numbers="0"/>
+          <include name="testloginValid" invocation-numbers="0"/>
+          <include name="checklanguage"/>
+          <include name="advancedSearch" invocation-numbers="0"/>
+          <include name="openURL"/>
         </methods>
       </class> <!-- testCases.TestCases -->
     </classes>
