@@ -3,6 +3,7 @@ package pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -41,10 +42,28 @@ public class HomePage {
 	}
 
 	public void clickAdvancedSearch() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".nav-search-button")));
-		// driver.findElement(By.cssSelector(".nav-search-button")).click();
-		element.click();
+		WebElement element;
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			element = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".nav-search-button")));
+			// driver.findElement(By.cssSelector(".nav-search-button")).click();
+			element.click();
+		} catch (NoSuchElementException e) {
+			try {
+				Thread.sleep(3000);
+
+			} catch (InterruptedException e1) {
+
+				e1.printStackTrace();
+			}
+			driver.findElement(By.cssSelector(".nav-search-button"));
+		}
+
+		catch (Exception e1) {
+
+			e1.printStackTrace();
+		}
+
 	}
 
 	public void ClickFilterPeopleMenuByText(String FilterText) {
